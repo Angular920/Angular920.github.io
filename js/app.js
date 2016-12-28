@@ -1,17 +1,17 @@
-var app = angular.module('Portfolio',['ngRoute']);
+var angularApp = angular.module('Angular920',['ngRoute']);
 
-app.config(['$routeProvider', function($routeProvider) {
+angularApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
-        .when('starkc1.github.io/NuvIoT', {
-            templateUrl: 'NuvIoT.html',
+        .when('Angular920.github.io', {
+            templateUrl: 'index.html', 
             controller: 'DomainController'
         })
-        .when('starkc1.github.io/NuvIoT/Models', {
+        .when('Angular920.github.io/Models', {
             templateUrl: 'models.html'
         })
         .otherwise({
-            redirectTo: 'starkc1.github.io/NuvIoT'
+            redirectTo: 'Angular920.github.io'
         });
 
 }]);
