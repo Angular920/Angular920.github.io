@@ -8,7 +8,7 @@ angularApp.config(['$routeProvider', function($routeProvider) {
             controller: 'DomainController'
         })
         .when('Angular920.github.io/Models', {
-            templateUrl: 'models.html'
+            templateUrl: 'views/models.html'
         })
         .otherwise({
             redirectTo: 'Angular920.github.io'
