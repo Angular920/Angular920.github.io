@@ -3,8 +3,8 @@ var angularApp = angular.module('angularApp',[require('angular-route'), 'ngRoute
 angularApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
-        .when('Angular920.github.io', {
-            templateUrl: 'index.html'
+        .when('Angular920.github.io/Domains', {
+            templateUrl: 'views/domains.html'
         })
         .when('Angular920.github.io/Models', {
             templateUrl: 'views/models.html'
