@@ -1,4 +1,4 @@
-var angularApp = angular.module('Angular920',['ngRoute']);
+var angularApp = angular.module('angularApp',['ngRoute']);
 
 angularApp.config(['$routeProvider', function($routeProvider) {
 
