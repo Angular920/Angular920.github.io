@@ -4,7 +4,7 @@ angularApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
         .when('Angular920.github.io', {
-            templateUrl: 'index.html', 
+            templateUrl: 'views/domains.html', 
             controller: 'DomainController'
         })
         .when('Angular920.github.io/Models', {
