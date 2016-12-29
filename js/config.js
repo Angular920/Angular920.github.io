@@ -5,7 +5,7 @@ angularApp.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'index.html'
         })
         .when('/Domains', {
-            templateUrl: '<h1>Routing Test</h1>'
+            templateUrl: '<div><h1>Routing Test</h1></div>'
         })
         .when('/Models', {
             templateUrl: 'views/models.html'
