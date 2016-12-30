@@ -102,10 +102,12 @@
                     <h6 class="card-subtitle"> Testing for the Id being passed to the controller </h6>
                     <a class="btn btn-default" id="DeviceAdmin" ng-click="showMore = ! showMore">Pass Id</a>
                 </div>
-                <div ng-show="showMore" ng-controller="ModelController">
-                    <div class="card-block" >
-                        <p> {{ Model.className }} </p>
-                        <p> {{ Model.name }} </p>
+                <div ng-show="showMore">
+                    <div ng-controller="ModelController">
+                        <div class="card-block" >
+                            <p> {{ Model.className }} </p>
+                            <p> {{ Model.name }} </p>
+                        </div>
                     </div>
                 </div>
             </div>
