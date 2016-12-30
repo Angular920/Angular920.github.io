@@ -99,16 +99,14 @@
                 <div class="card-header">
                     <h4 class="card-title"> ModelController Testing</h4>
                     <hr class="my-2">
-                    <a class="btn btn-default" id="DeviceAdmin">Test</a>
+                    <h6 class="card-subtitle"> Testing for the Id being passed to the controller </h6>
+                    <a class="btn btn-default" id="DeviceAdmin" ng-click="showMore = ! showMore">Pass Id</a>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6" ng-controller="ModelController">
-            <div class="card" ng-repeat="Model in model">
-                <div class="card-header">
-                    <h4 class="card-title"> {{ Model.className }} </h4>
-                    <hr class="my-2">
-                    <h6 class="card-subtitle"> {{ Model.name }} </h6>
+                <div ng-show="showMore" ng-controller="ModelController">
+                    <div class="card-block" ng-repeat="Model in model">
+                        <p> {{ Model.className }} </p>
+                        <p> {{ Model.name }} </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,6 +123,7 @@
 
 <!-- Controller -->
 <script src="js/controllers/DomainController.js"></script>
+<script src="js/controllers/ModelController.js"></script>
 
 <!-- Directive -->
 
