@@ -1,9 +1,4 @@
 <div ng-controller="ClassController">
-    <div class="jumbotron">
-        <h4 class="card-title"> {{ class.title }} </h4>
-        <hr class="my-2">
-        <h6 class="card-subtitle"> {{ class.description }} </h6>
-    </div>
     <div class="card" ng-repeat="Class in class">
         <h4 class="card-title"> {{ Class.elements.label }} </h4>
         <hr class="my-2">
