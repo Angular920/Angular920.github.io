@@ -7,7 +7,7 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/Domains', {
             template: '<div class="card"><div class="card-header"><h4 class="card-title">State Machine</h4></div></div>'
         })
-        .when('/:key', {
+        .when('/Model/:key', {
             templateUrl: 'index.html',
             controller: 'ModelController'
         })
