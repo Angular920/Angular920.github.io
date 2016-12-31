@@ -100,15 +100,18 @@
                     <h4 class="card-title"> ModelController Testing</h4>
                     <hr class="my-2">
                     <h6 class="card-subtitle"> Testing for the Id being passed to the controller </h6>
-                    <a class="btn btn-default" ng-click="showDetails = ! showDetails">Pass Id</a>
+                    <a class="btn btn-default" ng-click="showDetails = ! showDetails" href="/#/DeviceAdmin">Pass Id</a>
                 </div>
                 <div ng-show="showDetails">
-                    <div class="card-block" >
+                    <div class="card-block" ng-repeat="Model in model">
                         <p> {{ Model.className }} </p>
                         <p> {{ Model.name }} </p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div ng-view></div>
         </div>
     </div>
 </body>
