@@ -9,7 +9,6 @@ app.config(['$routeProvider', function($routeProvider) {
         })
         .when('/Model/:key', {
             templateUrl: 'index.html',
-            controller: 'ModelController'
         })
         .when('/Models', {
             templateUrl: 'views/models.html'

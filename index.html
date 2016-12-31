@@ -94,9 +94,9 @@
         <a class="btn btn-header" href="/#/Model/DeviceAdmin" >Begin</a>
     </div>
     <div class="container-fluid">
-        <div class="col-lg-4 col-md-4 col-sm-6">
-            <div class="card" ng-controller="ModelController">
-                <div class="card-header" ng-repeat="Model in model">
+        <div class="col-lg-4 col-md-4 col-sm-6" ng-controller="ModelController">
+            <div class="card" ng-repeat="Model in model">
+                <div class="card-header">
                     <h4 class="card-title"> {{ Model.className }} </h4>
                     <hr class="my-2">
                     <h6 class="card-subtitle"> {{ Model.name }} </h6>
