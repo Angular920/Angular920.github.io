@@ -7,11 +7,8 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/Domains', {
             template: '<div class="card"><div class="card-header"><h4 class="card-title">State Machine</h4></div></div>'
         })
-        .when('/Model/:key', {
-            templateUrl: 'index.html',
-        })
-        .when('/Models', {
-            templateUrl: 'views/models.html'
+        .when('/Models/:key', {
+            templateUrl: 'views/models.html',
         })
         .otherwise({
             redirectTo: 'Angular920.github.io'
