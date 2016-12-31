@@ -5,7 +5,7 @@ app.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'views/models.html',
         })
         .otherwise({
-            redirectTo: 'Angular920.github.io'
+            redirectTo: '/'
         });
 
 }]);
