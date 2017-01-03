@@ -1,9 +1,9 @@
 <div ng-controller="ClassController">
     <div class="card" ng-repeat="Class in class">
         <div class="card-header">
-            <h4 class="card-title"> {{ Class.title }} </h4>
+            <h4 class="card-title"> {{ Class.label }} </h4>
             <hr class="my-2">
-            <h6 class="card-subtitle"> {{ Class.name}} </h6>
+            <h6 class="card-subtitle"> {{ Class.help }} </h6>
         </div>
     </div>
 </div>
