@@ -92,6 +92,10 @@
     border-radius: 0px;
     white-space: normal!important;
 }
+
+.List {
+    margin-top: 40px;
+}
 </style>
 
 <body ng-app="angularApp">
@@ -130,10 +134,10 @@
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6" ng-controller="ModelListController">
-            <div ng-view="modelList.html"></div>
+            <div ng-view></div>
         </div>
          <div class="col-lg-4 col-md-4 col-sm-6" ng-controller="ModelDetailController">
-            <div ng-view="modelDetail.html"></div>
+            <div ng-view></div>
         </div>
     </div>
 </body>
