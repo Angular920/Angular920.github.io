@@ -4,7 +4,7 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/Models/:key', {
             templateUrl: 'views/models.html',
         })
-        .when('/Models/:key/:className', {
+        .when('/Models/:key/:class', {
             templateUrl: 'views/class.html'
         })
         .otherwise({
