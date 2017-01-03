@@ -1,7 +1,6 @@
 <div ng-controller="ModelListController">
-    <div class="List">
-        <ul ng-repeat="property in model">
-            <li> {{ property.name }} </li>
-        </ul>
+    <h4 class="list-header"> {{ model.domainKey }} </h4>
+    <div class="list-group" ng-repeat="property in model">
+        <button> {{ property.name }} </button>
     </div>  
 </div>
