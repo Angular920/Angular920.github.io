@@ -1,9 +1,5 @@
 <div ng-controller="ModelListController">
-    <div class="card" ng-repeat="Model in model">
-        <div class="card-header">
-            <h4 class="card-title"> {{ Model.name }} </h4>
-            <hr class="my-2">
-            <a class="btn btn-default" href="/#/Models/{{ Model.domainKey }}/{{ Model.className }}"> Show More </a>
-        </div>
-    </div>
+    <ul ng-repeat="property in model">
+        <li> {{ property.name }} </li>
+    </ul>
 </div>
