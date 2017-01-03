@@ -2,10 +2,10 @@ app.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
         .when('/Models/:key', {
-            templateUrl: 'views/models.html',
+            templateUrl: 'views/modelList.html',
         })
-        .when('/Models/:key/:class', {
-            templateUrl: 'views/classes.html'
+        .when('/Models/:key/:classname', {
+            templateUrl: 'views/modelDetail.html'
         })
         .otherwise({
             redirectTo: '/',
