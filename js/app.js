@@ -1,2 +1,3 @@
-var app = angular.module('angularApp',['ngRoute']);
+var app = angular.module('angularApp',[]);
 
+DomainController.$inject = ['$scope', 'domainKeyService'];
