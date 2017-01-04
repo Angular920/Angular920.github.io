@@ -8,7 +8,7 @@ app.factory('domainKeyService', function ($rootScope) {
         this.PassKey();
     };
 
-    KeyService.PassKey = functin () {
+    KeyService.PassKey = function () {
         $rootScope.$pass('passkey')
     };
 
