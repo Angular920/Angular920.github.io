@@ -31,6 +31,11 @@
     padding: 10px;
 }
 
+.hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .container-fluid {
     margin-top: 240px;
 }
@@ -94,8 +99,9 @@
 }
 
 .list-group {
-    margin-top: 5px;
-    width: 50%;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
     box-shadow: -6px 7px 15px 3px gray;
 }
 
@@ -113,13 +119,13 @@
 
 .list-group-item-heading {
     color: white;
-    padding: 12px 15px;
+    padding: 2px 15px;
     text-align: center;
 }
 
 .list-group-item-text {
     color: white;
-    padding: 12px 15px;
+    padding: 6px 9px;
     text-align: center;
 }
 
@@ -140,7 +146,7 @@ button.list-group-item {
         </div>  
     </nav>    
     <div class="container-fluid">
-        <div class="col-lg-4 col-md-4 col-sm-6" ng-controller="DomainController">
+        <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="DomainController">
             <div class="list-group">
                 <div class="list-group-item">
                     <h4 class="list-group-item-heading"> Item Heading </h4>
@@ -151,7 +157,7 @@ button.list-group-item {
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-6" ng-controller="ModelListController">
+        <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelListController">
             <div ng-view></div>
         </div>
     </div>
