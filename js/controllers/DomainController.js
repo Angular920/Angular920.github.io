@@ -5,7 +5,6 @@ app.controller('DomainController', function($scope, $http, shareDataService) {
     });
 
     $scope.passKey = function(key) {
-        return key;
+        shareDataService.addList($scope.passKey);
     };
-    shareDataService.addList(key);
 });
