@@ -1,12 +1,8 @@
-app.controller('ModelListController', function($scope, $http) {
+app.controller('ModelListController', function($scope, $http, shareDataService) {
 
-    $scope.search = function(param) {
-        $http.get("http://dev.nuviot.com/metadata/dox/domains" + "/" + param).then(function(response) {
-            $scope.model = response.data;
-        });
-    };
+    $scope.key = shareDataService.getList();
 
-    $scope.passKey = function(key) {
-        alert(key);
-    };
+    $http.get("http://dev.nuviot.com/metadata/dox/domains" + "/" + $scope.key).then(function(response) {
+        $scope.model = response.data;
+    });
 });
