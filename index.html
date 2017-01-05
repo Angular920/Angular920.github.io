@@ -168,20 +168,20 @@ a.list-group-item:hover {
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelListController">
             <div class="list-group">
-                <a class="list-group-item" ng-repeat="list in model">
+                <a class="list-group-item" ng-repeat="property in model">
                     <div>
-                        <h4 class="list-group-item-heading"> {{ list.className }} </h4>
+                        <h4 class="list-group-item-heading"> {{ property.className }} </h4>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelDetailController">
             <div class="list-group">
-                <a class="list-group-item" ng-repeat="Detail in details.elements">
+                <a class="list-group-item" ng-repeat="property in details.elements">
                     <div>
-                        <h4 class="card-title"> {{ Detail.label }} </h4>
+                        <h4 class="card-title"> {{ property.label }} </h4>
                         <hr class="my-2">
-                        <h6 class="card-subtitle"> {{ Detail.help }} </h6>
+                        <h6 class="card-subtitle"> {{ property.help }} </h6>
                     </div>
                 </a>
             </div>
