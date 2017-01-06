@@ -4,8 +4,8 @@ app.controller('DomainController', function($scope, $http, mySharedService) {
         $scope.info = response.data;
     });
 
-    $scope.clickMe = function() {
-        console.log('Hello World');
+    $scope.clickMe = function(name) {
+        console.log(name);
     };
 
 });
