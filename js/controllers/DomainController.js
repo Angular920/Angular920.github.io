@@ -9,7 +9,7 @@ app.controller('DomainController', function($scope, $http, mySharedService) {
     };
     $scope.$on('handleBroadcast', function() {
         $scope.key = mySharedService.key;
+        console.log($scope.key);
     });
 
-    console.log($scope.key);
 });
