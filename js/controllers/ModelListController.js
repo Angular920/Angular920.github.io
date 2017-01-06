@@ -6,6 +6,6 @@ app.controller('ModelListController', function($scope, $http, mySharedService) {
 
     $scope.getDomainKey = function() {
         $scope.domainKey = mySharedService.getKey();
-        console.log(domainKey);
     };
+    console.log(domainKey);
 });
