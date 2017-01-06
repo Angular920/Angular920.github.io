@@ -5,12 +5,12 @@ app.controller('DomainController', function($scope, $http, mySharedService) {
     });
 
     $scope.passKey = function(key) {
-        sharedService.prepForBroadcast(key);
+        mySharedService.prepForBroadcast(key);
         console.log("passKey" + key)
     };
 
     $scope.$on('handleBroadcast', function() {
-        $scope.domainKey = sharedService.domainkey
+        $scope.domainKey = mySharedService.domainkey
         console.log("on" + domainkey)
     })
 
