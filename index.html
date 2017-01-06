@@ -155,13 +155,13 @@ a.list-group-item:hover {
         </div>  
     </nav>    
     <div class="container-fluid">
-        <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="TestCtrl">
+        <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="DomainController">
             <div class="list-group">
                 <a class="list-group-item" ng-repeat="property in info">
                     <div ng-click="clickMe()">
-                        <h4 class="list-group-item-heading"> test </h4>
+                        <h4 class="list-group-item-heading"> {{ property.name }} </h4>
                         <hr class="my-2">
-                        <p class="list-group-item-text"> test </p>
+                        <p class="list-group-item-text"> {{ property.description }} </p>
                     </div>
                 </a>
             </div>
@@ -188,6 +188,19 @@ a.list-group-item:hover {
         </div>
     </div>
 </body>
+
+<!--$http.get("http://dev.nuviot.com/metadata/dox/domains").then(function(response) {
+        $scope.info = response.data;
+    });
+
+    $scope.passKey = function(key) {
+        mySharedService.prepForBroadcast(key);
+        console.log(key);
+    };
+    $scope.$on('handleBroadcast', function() {
+        $scope.key = mySharedService.key;
+        console.log($scope.key);
+    });-->
 
 
 <!-- angularjs -->
