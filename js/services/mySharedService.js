@@ -1,16 +1,13 @@
-app.factory('mySharedService', function($rootScope) {
-    var mySharedService = {};
+app.service('mySharedService', function() {
+    var domainKey = '';
 
-    mySharedService.domainkey = '';
-
-    mySharedService.prepForBroadcast = function(key) {
-        this.domainkey = key;
-        this.broadcastItem();
+    return {
+        getKey: function() {
+            return domainKey;
+        },
+        setKey: function(key) {
+            domainKey = key;
+        }        
     };
-
-    mySharedService.broadcastItem = function() {
-        $rootScope.$broadcastItem('handleBroadcast');
-    };
-
-    return mySharedService;
+    
 });
