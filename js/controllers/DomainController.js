@@ -1,4 +1,4 @@
-app.controller('DomainController', function($scope, $http, mySharedService) {
+app.controller('DomainController', function($scope, $http) {
 
     $scope.passKey = function(key) {
         mySharedService.preForBroadcast(key);
