@@ -4,8 +4,12 @@ app.controller('DomainController', function($scope, $http, mySharedService) {
         $scope.info = response.data;
     });
 
-    $scope.clickMe = function(name) {
-        console.log(name);
+   $scope.passKey = function(key) {
+        mySharedService.prepForBroadcast(key);
+        console.log(key);
     };
+    $scope.$on('handleBroadcast', function() {
+        $scope.key = mySharedService.key;
+        console.log(key);
 
 });

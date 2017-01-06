@@ -12,7 +12,5 @@ app.factory('mySharedService', function($rootScope) {
         $rootScope.$broadcast('handleBroadcast');
     };
 
-    console.log('hello world');
-
     return sharedService;
 });
