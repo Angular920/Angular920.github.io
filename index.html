@@ -131,12 +131,6 @@
     text-align: center;
 }
 
-button.list-group-item {
-   text-align: center; 
-   color: white;
-   width: 100%;
-}
-
 a.list-group-item .list-group-item-heading {
     color: white;
 }
@@ -166,7 +160,7 @@ a.list-group-item:hover {
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelListController">
+        <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelListController" ng-init="init()">
             <div class="list-group">
                 <a class="list-group-item" ng-repeat="property in model">
                     <div>
@@ -188,19 +182,6 @@ a.list-group-item:hover {
         </div>
     </div>
 </body>
-
-<!--$http.get("http://dev.nuviot.com/metadata/dox/domains").then(function(response) {
-        $scope.info = response.data;
-    });
-
-    $scope.passKey = function(key) {
-        mySharedService.prepForBroadcast(key);
-        console.log(key);
-    };
-    $scope.$on('handleBroadcast', function() {
-        $scope.key = mySharedService.key;
-        console.log($scope.key);
-    });-->
 
 
 <!-- angularjs -->
