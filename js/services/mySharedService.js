@@ -5,7 +5,7 @@ app.factory('mySharedService', function($rootScope) {
 
     sharedService.preForBroadcast = function(key) {
         this.key = key;
-            this.broadcastItem();
+        this.broadcastItem();
     };
 
     sharedService.broadcastItem = function() {
