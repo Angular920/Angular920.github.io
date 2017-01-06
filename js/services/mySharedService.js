@@ -1,15 +1,16 @@
-app.service('mySharedService', function() {
-    var domainKey = '';
+app.service('mySharedService', function($rootScope) {
+    var sharedService = {};
 
-    return {
-        getKey: function() {
-            console.log(domainKey);
-            return domainKey;
-        },
-        setKey: function(key) {
-            domainKey = key;
-            
-        }        
+    sharedService.domainkey = '';
+
+    sharedService.prepForBroadcast = function(key) {
+        this.domainkey = key;
+        this.broadcastItem();
     };
-    
+
+    sharedService.broadcastItem = function() {
+        $rootScope.$broadcastItem('handleBroadcast');
+    };
+
+    return sharedService;
 });
