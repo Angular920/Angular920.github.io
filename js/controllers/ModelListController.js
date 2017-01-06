@@ -1,9 +1,12 @@
-app.controller('ModelListController', function($scope, $http, shareDataService) {
+app.controller('ModelListController', function($scope, $http, mySharedService) {
 
-    $scope.key = shareDataService.getList();
-
-    $http.get("http://dev.nuviot.com/metadata/dox/domains" + "/" + $scope.key).then(function(response) {
+    $http.get("http://dev.nuviot.com/metadata/dox/domains" + "/").then(function(response) {
         $scope.model = response.data;
-        console.log(URL);
     });
+
+    $scope.$on('handleBroadcast', function() {
+        $scope.key = mySharedService.key;
+    });
+
+    console.log($scope.key);
 });
