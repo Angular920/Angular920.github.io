@@ -13,7 +13,7 @@ app.controller('DomainController', function($scope, $http, mySharedService, clic
         console.log($scope.key);
     });
 
-    $scope.clickMe() = function()
+    scope.clickMe() = function()
     {
         console.log('hello world');
     };
