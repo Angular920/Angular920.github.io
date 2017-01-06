@@ -11,5 +11,5 @@ app.controller('DomainController', function($scope, $http, mySharedService) {
         $scope.key = mySharedService.key;
     });
 
-    console.log(key);
+    console.log($scope.key);
 });
