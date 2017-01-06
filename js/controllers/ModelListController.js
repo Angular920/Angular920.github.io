@@ -9,8 +9,8 @@ app.controller('ModelListController', ['$scope', '$http', 'mySharedService', fun
         };
     };
 
-    $scope.passName = function(domainKey, name) {
-        console.log("key:" + domainKey + " name:" + name);
-        mySharedService.showModelDetail(domainKey , name); 
+    $scope.passName = function(domainKey, className) {
+        console.log("key:" + domainKey + " name:" + className);
+        mySharedService.showModelDetail(domainKey , className); 
     };
 }]);

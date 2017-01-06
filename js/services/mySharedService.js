@@ -1,15 +1,15 @@
 app.service('mySharedService', function() {
     var KEY = '';
-    var NAME = '';
+    var CLASSNAME = '';
     var DOMAINKEY = '';
 
     return {
         getKey: function() {
-            return KEY, NAME, DOMAINKEY;
+            return KEY, CLASSNAME, DOMAINKEY;
         },
-        setKey: function(key, name, domainKey) {
+        setKey: function(key, className, domainKey) {
             KEY = key;
-            NAME = name;
+            NAME = className;
             DOMAINKEY = domainKey;
         }        
     };
