@@ -1,12 +1,16 @@
 app.service('mySharedService', function() {
-    var domainKey = '';
+    var KEY = '';
+    var NAME = '';
+    var DOMAINKEY = '';
 
     return {
         getKey: function() {
-            return domainKey;
+            return KEY, NAME, DOMAINKEY;
         },
-        setKey: function(key) {
-            domainKey = key;
+        setKey: function(key, name, domainKey) {
+            KEY = key;
+            NAME = name;
+            DOMAINKEY = domainKey;
         }        
     };
     

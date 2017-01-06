@@ -1,5 +1,9 @@
-app.controller('ModelDetailController', function($scope, $http) {
-    $http.get("http://dev.nuviot.com/metadata/dox/entity" + "/" + "DeviceAdmin" + "/" + "Action").then(function(response) {
-        $scope.details = response.data;
-    })
-})
+app.controller('ModelDetailController', ['$scope', '$http', 'mySharedService', function($scope, $http, mySharedService) {
+    $scope.init = function() {
+        console.log("ModelDetail Loaded");
+        mySharedService.showModelDetail = function(domainKey, name) {
+            console.log("HERE IS MY KEY AND NAME: " + domainKey + " AND " + name);
+            
+        };
+    };
+}]); 
