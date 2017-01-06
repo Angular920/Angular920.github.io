@@ -3,9 +3,10 @@ app.factory('mySharedService', function($rootScope) {
 
     sharedService.key = '';
 
-    sharedService.preForBroadcast = function(key) {
+    sharedService.prepForBroadcast = function(key) {
         this.key = key;
         this.broadcastItem();
+        console.log(key);
     };
 
     sharedService.broadcastItem = function() {
@@ -13,4 +14,4 @@ app.factory('mySharedService', function($rootScope) {
     };
 
     return sharedService;
-})
+});
