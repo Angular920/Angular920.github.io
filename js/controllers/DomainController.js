@@ -13,4 +13,9 @@ app.controller('DomainController', function($scope, $http, mySharedService) {
         console.log($scope.key);
     });
 
+    $scope.clickMe() = function()
+    {
+        console.log('hello world');
+    };
+
 });
