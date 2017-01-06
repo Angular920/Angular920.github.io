@@ -1,13 +1,9 @@
-app.controller('ModelListController', function($scope, $http, mySharedService) {
+app.controller('ModelListController', function($scope, $http) {
 
     $http.get("http://dev.nuviot.com/metadata/dox/domains" + "/" + "DeviceAdmin").then(function(response) {
         $scope.model = response.data;
     });
 
-    $scope.getDomainKey = function() {
-        $scope.domainKey = mySharedService.getKey();
-        console.log(mySharedService.getKey);
-    };
 
 
 });

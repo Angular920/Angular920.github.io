@@ -1,4 +1,4 @@
-app.service('mySharedService', function($rootScope) {
+app.factory('mySharedService', function($rootScope) {
     var sharedService = {};
 
     sharedService.domainkey = '';
