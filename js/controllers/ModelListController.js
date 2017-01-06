@@ -4,9 +4,9 @@ app.controller('ModelListController', function($scope, $http, mySharedService) {
         $scope.model = response.data;
     });
 
-    $scope.getKey = function() {
+    $scope.getDomainKey = function() {
         $scope.domainKey = mySharedService.getKey();
     };
 
-    console.log(getKey);
+
 });
