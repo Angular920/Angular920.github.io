@@ -8,5 +8,5 @@ app.controller('ModelListController', function($scope, $http, mySharedService) {
         $scope.key = mySharedService.key;
     });
 
-    console.log($scope.key);
+    console.log(key);
 });
