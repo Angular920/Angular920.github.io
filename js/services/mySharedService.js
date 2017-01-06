@@ -1,7 +1,7 @@
 app.service('mySharedService', function() {
     var domainKey = '';
 
-    console.log(key);
+    console.log(domainKey);
 
     return {
 
