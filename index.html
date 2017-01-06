@@ -189,6 +189,18 @@ a.list-group-item:hover {
     </div>
 </body>
 
+<!--
+    , mySharedService
+
+        $scope.passKey = function(key) {
+        mySharedService.preForBroadcast(key);
+    };
+    $scope.$on('handleBroadcast', function() {
+        $scope.key = mySharedService.key;
+    });
+
+    -->
+
 <!-- angularjs -->
 <script src="js/app.js"></script>
 <script src="js/config.js"></script>
