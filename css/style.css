@@ -14,13 +14,18 @@
   white-space: normal!important;
 }
 
-.btn-default {
+.btn-domain {
   background: #f8f8ff;
 }
 
 .btn-header {
   background-color: #f8f8ff;
   width: 150px;
+}
+
+.btn-model {
+  background-color: #f8f8ff;
+  margin-top: 10px;
 }
 
 .container-fluid {
