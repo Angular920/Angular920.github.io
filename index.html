@@ -43,11 +43,11 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelListController" ng-init="init()">
             <div class="list-group">
-                <a class="list-group-item" ng-repeat="property in model">
-                    <div ng-click="passName( property.domainKey , property.className)">
+                <div class="list-group-item" ng-repeat="property in model">
                         <h4 class="list-group-item-heading"> {{ property.name }} </h4>
-                    </div>
-                </a>
+                        <hr class="my-2">
+                        <a class="btn btn-default" ng-click="passName( property.domainKey , property.className )"> Details </a>
+                </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelDetailController" ng-init="init()">
