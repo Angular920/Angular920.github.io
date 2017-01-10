@@ -52,13 +52,20 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6" ng-controller="ModelDetailController" ng-init="init()">
             <div class="list-group">
-                <a class="list-group-item" ng-repeat="property in details.elements">
+                <!--<a class="list-group-item" ng-repeat="property in details.elements">
                     <div>
                         <h4 class="list-group-item-heading"> {{ property.label }} </h4>
                         <hr class="my-2">
                         <h6 class="list-group-item-text"> {{ property.help }} </h6>
                     </div>
-                </a>
+                </a>-->
+                <div class="list-group-item">
+                    <h4 class="list-group-item-heading"> Domain Name: Device Administration</h4>
+                    <h5 class="list-group-item-heading"> Model Name: Action </h5>
+                    <hr class="my-2">
+                    <p class="list-group-item-text">Domain Description: A set of classes that contains meta data for managing IoT devices</p>
+                    <p class="list-group-item-text">Model Description: Actions can perform functionality on a Device to manipulate it's real world or attribute states </p>            
+                </div>
             </div>
         </div>
     </div>
