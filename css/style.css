@@ -58,18 +58,17 @@
   margin-bottom: -1px;
   background-color: #003777;
   border: 1px solid white;
+  text-align: left;
 }
 
 .list-group-item-heading {
   color: white;
   padding: 2px 15px;
-  text-align: center;
 }
 
 .list-group-item-text {
   color: white;
   padding: 6px 9px;
-  text-align: center;
 }
 
 a.list-group-item .list-group-item-heading {
