@@ -69,11 +69,13 @@
 .list-group-item-heading {
   color: white;
   padding: 2px 7px;
+  margin-bottom: -10px;
 }
 
 .list-group-item-text {
   color: white;
   padding: 6px 7px;
+  margin-top: -10px;
 }
 
 a.list-group-item .list-group-item-heading {
