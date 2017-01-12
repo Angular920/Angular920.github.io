@@ -74,19 +74,15 @@
                     <h4 class="list-group-item-heading"> {{ property.label }} </h4>
                     </br>
                     <p class="list-group-item-text"> {{ property.help }} </p>
-                    <hr class="my-2">
-                    <p class="list-group-item-text">Watermark: {{ property.watermark }} </p>
-                    <p class="list-group-item-text">Is Required: {{ property.isRequired }} </p>
-                    <p class="list-group-item-text">Required Message: {{ property.requiredMessage }} </p>
-                    <p class="list-group-item-text">Help: {{ property.help }} </p>
-                    <p class="list-group-item-text">Field Type: {{ property.fieldType }} </p>
-                    <p class="list-group-item-text">Reg Ex: {{ property.regEx }} </p>
-                    <p class="list-group-item-text">Reg Ex Message: {{ property.regExMessage }} </p>
-                    <p class="list-group-item-text">Value: {{ property.value }} </p>
-                    <p class="list-group-item-text">Is User Editable: {{ property.isUserEditable}} </p>
-                    <p class="list-group-item-text">Data Type: {{ property.dataType }} </p>
-                    <p class="list-group-item-text">Min Length: {{ property.minLength }} </p>
-                    <p class="list-group-item-text">Max Length: {{ property.maxLength }} </p>
+                    </br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Required Message
+                        </div>
+                        <div class="col-md-8">
+                            Shared Action is a required field
+                        </div>
+                    </div>                 
                 </div>
             </div>
         </div>
