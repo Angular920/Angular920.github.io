@@ -81,51 +81,51 @@
                                     <th>Attribute Detail</th>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr ng-hide="!property.watermark">
                                         <td>Watermark</td>
                                         <td> {{ property.watermark }} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.isRequired">
                                         <td>Is Required</td>
                                         <td> {{ property.isRequired }} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.requiredMessage">
                                         <td>Required Message</td>
                                         <td> {{ property.requiredMessage }} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.fieldType">
                                         <td>Field Type</td>
                                         <td> {{ property.fieldType }} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.regEx">
                                         <td>Reg Ex</td>
                                         <td> {{property.regEx }} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.regExMessage">
                                         <td>Reg Ex Message</td>
                                         <td> {{ property.regExMessage }} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.value">
                                         <td>Value</td>
                                         <td> {{ property.value }}</td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.isUserEditable">
                                         <td>Is User Editable</td>
                                         <td> {{ property.isUserEditable }} </td>
                                     </tr>
-                                    <tr> 
+                                    <tr ng-hide="!property.dataType"> 
                                         <td>Data Type</td>
                                         <td> {{ property.dataType }} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.minLength">
                                         <td>Min Length</td>
                                         <td> {{ property.minLength}} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.maxLength">
                                         <td>Max Length</td>
                                         <td> {{ property.maxLength}} </td>
                                     </tr>
-                                    <tr>
+                                    <tr ng-hide="!property.help">
                                         <td>Help</td>
                                         <td> {{ property.help }} </td>
                                     </tr>
