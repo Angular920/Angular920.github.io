@@ -7,9 +7,5 @@ app.controller('DomainController', ['$scope', '$http', 'mySharedService', functi
     $scope.passKey = function(key) {
         console.log(key);
         mySharedService.showModelList(key);
-<<<<<<< HEAD
-    }
-=======
-    };
->>>>>>> origin/master
+   };
 }]);
