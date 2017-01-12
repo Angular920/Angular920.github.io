@@ -54,7 +54,7 @@ body {
 }
 
 .jumbotron {
-  background-color: #2979ff;
+  background-color: #2196f3;
   color: white;
   text-align: center; 
   margin-bottom: 0px;
@@ -99,8 +99,8 @@ a.list-group-item:hover {
 }
 
 .navbar {
-  background-color: #2979ff;
-  border-color: #2979ff;
+  background-color: #2196f3;
+  border-color: #2196f3;
 }
 
 .table {
