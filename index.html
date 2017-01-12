@@ -78,17 +78,17 @@
                             <div class="row">
                                 <div class="col-md-5 col-md-offset-1">
                                     <p class="attribute" ng-hide="!property.watermark"> Watermark: </p>
-                                    <p class="attribute"> Is Required: </p>
-                                    <p class="attribute"> Required Message: </p>
-                                    <p class="attribute"> Help: </p>
-                                    <p class="attribute"> Field Type: </p>
-                                    <p class="attribute"> Reg Ex: </p>
-                                    <p class="attribute"> Reg Ex Message: </p>
-                                    <p class="attribute"> Value: </p>
-                                    <p class="attribute"> Is User Editable: </p>
-                                    <p class="attribute"> Data Type: </p>
-                                    <p class="attribute"> Min Length: </p>
-                                    <p class="attribute"> Max Length: </p>
+                                    <p class="attribute" ng-hide="!property.isRequired"> Is Required: </p>
+                                    <p class="attribute" ng-hide="!property.requiredMessage"> Required Message: </p>
+                                    <p class="attribute" ng-hide="!property.help"> Help: </p>
+                                    <p class="attribute" ng-hide="!property.fieldType"> Field Type: </p>
+                                    <p class="attribute" ng-hide="!property.regEx"> Reg Ex: </p>
+                                    <p class="attribute" ng-hide="!property.regExMessage"> Reg Ex Message: </p>
+                                    <p class="attribute" ng-hide="!property.value"> Value: </p>
+                                    <p class="attribute" ng-hide="!property.isUserEditable"> Is User Editable: </p>
+                                    <p class="attribute" ng-hide="!property.dataType"> Data Type: </p>
+                                    <p class="attribute" ng-hide="!property.minLength"> Min Length: </p>
+                                    <p class="attribute" ng-hide="!property.maxLength"> Max Length: </p>
                                 </div>
                                 <div class="col-md-6">
                                     <p class="attribute"> {{ property.watermark }} </p>
