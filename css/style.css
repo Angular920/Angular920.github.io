@@ -94,3 +94,7 @@ a.list-group-item:hover {
 .navbar {
   background-color: #003777;
 }
+
+.table {
+  color: white;
+}
