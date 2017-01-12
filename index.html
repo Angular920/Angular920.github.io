@@ -75,7 +75,19 @@
                             </br>
                             <p class="list-group-item-text"> {{ property.help }} </p>
                             </br>
-                            <div class="row">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Watermark</td>
+                                        <td> {{ property.watermark }} </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is Required</td>
+                                        <td> {{ property.isRequired }} </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--<div class="row">
                                 <div class="col-md-4 col-md-offset-1">
                                     <p class="attribute" ng-hide="!property.watermark"> Watermark: </p>
                                     <hr class="my-2">
@@ -115,7 +127,7 @@
                                     <p class="attribute" ng-hide="!property.maxLength"> {{ property.maxLength }} </p>
                                     <p class="attribute" ng-hide="!property.help"> {{ property.help }} </p>
                                 </div>
-                            </div>           
+                            </div>-->           
                         </div>  
                     </div>    
                 </div>
