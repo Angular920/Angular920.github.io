@@ -8,4 +8,4 @@ app.controller('DomainController', ['$scope', '$http', 'mySharedService', functi
         console.log(key);
         mySharedService.showModelList(key);
    };
-}]);
+}]);    
