@@ -57,36 +57,34 @@
                             <h4 class="list-group-item-heading"> {{ details.domain.name }} </h4>
                             </br>
                             <p class="list-group-item-text"> {{ details.domain.description }} </p>                    
-                            <div class="row">
-                                <table class="table">
-                                    <tbody>
-                                        <tr ng-hide="!details.domain.currentVersion.major">
-                                            <td>Major</td>
-                                            <td> {{ details.domain.currentVersion.major }} </td>
-                                        </tr>
-                                        <tr ng-hide="!details.domain.currentVersion.minor">
-                                            <td>Minor</td>
-                                            <td> {{ details.domain.currentVersion.minor }} </td>
-                                        </tr>
-                                        <tr ng-hide="!details.domain.currentVersion.revision">
-                                            <td>Revision</td>
-                                            <td> {{ details.domain.currentVersion.revision }} </td>
-                                        </tr>
-                                        <tr ng-hide="!details.domain.currentVersion.build">
-                                            <td>Build</td>
-                                            <td> {{ details.domain.currentVersion.build }} </td>
-                                        </tr>
-                                        <tr ng-hide="!details.domain.currentVersion.dateStamp">
-                                            <td>Date</td>
-                                            <td> {{ details.domain.currentVersion.dateStamp }} </td>
-                                        </tr>
-                                        <tr ng-hide="!details.domain.currentVersion.releaseNotes">
-                                            <td>Release Notes</td>
-                                            <td> {{ details.domain.currentVersion.releaseNotes }} </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <table class="table">
+                                <tbody>
+                                    <tr ng-hide="!details.domain.currentVersion.major">
+                                        <td>Major</td>
+                                        <td> {{ details.domain.currentVersion.major }} </td>
+                                    </tr>
+                                    <tr ng-hide="!details.domain.currentVersion.minor">
+                                        <td>Minor</td>
+                                        <td> {{ details.domain.currentVersion.minor }} </td>
+                                    </tr>
+                                    <tr ng-hide="!details.domain.currentVersion.revision">
+                                        <td>Revision</td>
+                                        <td> {{ details.domain.currentVersion.revision }} </td>
+                                    </tr>
+                                    <tr ng-hide="!details.domain.currentVersion.build">
+                                        <td>Build</td>
+                                        <td> {{ details.domain.currentVersion.build }} </td>
+                                    </tr>
+                                    <tr ng-hide="!details.domain.currentVersion.dateStamp">
+                                        <td>Date</td>
+                                        <td> {{ details.domain.currentVersion.dateStamp }} </td>
+                                    </tr>
+                                    <tr ng-hide="!details.domain.currentVersion.releaseNotes">
+                                        <td>Release Notes</td>
+                                        <td> {{ details.domain.currentVersion.releaseNotes }} </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
