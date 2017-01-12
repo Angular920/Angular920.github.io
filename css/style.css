@@ -21,7 +21,8 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 3px 19px rgba(0,0,0,0.25), 0 0px 3px rgba(0,0,0,0.22);
+  color: white;
 }
 
 .btn-domain {
@@ -62,7 +63,7 @@ body {
 
 .list-group {
   margin-top: 20px;
-  background-color: #1565c0
+  background-color: #1565c0;
   width: 100%;
   text-align: center;
   box-shadow: -6px 7px 15px 3px gray;
@@ -71,7 +72,7 @@ body {
 .list-group-item {
   display: block;
   padding: 12px 20px;
-  margin-bottom: -1px;
+  margin-bottom: 10px;
   background-color: #2196f3;
   border: 1px solid transparent;
   text-align: left;
