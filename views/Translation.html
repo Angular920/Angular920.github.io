@@ -1,0 +1,36 @@
+<div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6">
+    <table class="table table-striped">
+        <thead>
+            <th class="english-file">
+                <div class="dropdown">
+                    <div class="btn-group">
+                        <button class="btn btn-primary-file dropdown-toggle" type="button" data-toggle="dropdown">File Selection <span class="caret"></span></button>
+                        <div class="dropdown-menu" id="file">
+                            <a class="btn btn-secondary dropdown-item" ng-click="passFileName( 'File1' )">File 1</a>
+                            </br>
+                            <a class="btn btn-secondary dropdown-item" ng-click="passFileName( 'File2' )">File 2</a>
+                        </div>
+                    </div>
+                </div>
+            </th>
+            <th class="translation">
+                <div class="dropdown">
+                    <div class="btn-group">
+                        <button class="btn btn-primary-translation dropdown-toggle" type="button" data-toggle="dropdown">Language Options <span class="caret"></span></button>
+                        <div class="dropdown-menu" id="translation">
+                            <a class="btn btn-secondary dropdown-item" ng-click="passNewLanguage( 'German' )">German</a>
+                            </br>
+                            <a class="btn btn-secondary dropdown-item" ng-click="passNewLanguage( 'Spanish' )">Spanish</a>
+                        </div>
+                    </div>
+                </div>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Hello in English </td>
+                <td><input placeholder="Translation" type="text" class="form-control"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
