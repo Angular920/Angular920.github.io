@@ -73,7 +73,6 @@ body {
   margin-bottom: -21px;
   margin-top: -20px;
   padding: 10px;
-  height: 100px;
 }
 
 .list-group {
@@ -110,7 +109,6 @@ body {
   background-color: transparent;
   border-color: transparent;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  height: 100px;
 }
 
 .table {
