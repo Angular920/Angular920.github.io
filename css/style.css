@@ -26,16 +26,16 @@ body {
 }
 
 .btn-domain {
-  background-color: #e040fb;
+  background-color: #2196f3;
 }
 
 .btn-header {
-  background-color: #e040fb;
+  background-color: #2196f3;
   width: 150px;
 }
 
 .btn-model {
-  background-color: #e040fb;
+  background-color: #2196f3;
   margin-top: -1px;
 }
 
@@ -99,5 +99,5 @@ body {
 }
 
 .table {
-  color: white;
+  color: #2196f3;
 }
