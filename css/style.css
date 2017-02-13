@@ -115,6 +115,83 @@ h1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.table {
+#table-details {
   color: #2196f3;
+}
+
+#table-translation {
+  background-color: white;
+  color: #2196f3;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  column-spacing: 20px;
+  padding: 20px 20px;
+}
+
+th.english {
+  width: 40%;
+  font-size: 18px;
+  padding: 20px 20px;
+}
+
+th.translation {
+  width: 40%;
+}
+
+.form-control {
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  outline: 0;
+  color: #2196f3;
+  height: 30px;
+}
+
+.section {
+  font-size: 16px;
+}
+
+.btn-primary-file, .btn-primary-translation {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  border-radius: 0;
+  color: white;
+  width: 160px;
+  height: 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn-secondary:hover {
+  background-color: #2196f3;
+  color: white;
+  border-radius: 0;
+  box-shadow: 0 3px 19px rgba(0,0,0,0.25), 0 0px 3px rgba(0,0,0,0.22);
+}
+
+.btn-primary-file:hover, .btn-primary-translation:hover {
+  color: white;
+  box-shadow: 0 1px 19px rgba(0,0,0,0.12), 0 1px 19px rgba(0,0,0,0.24);
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 3px 1.5rem;
+  clear: both;
+  color: #2196f3;
+  text-align: inherit;
+  background: 0 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation
 }
