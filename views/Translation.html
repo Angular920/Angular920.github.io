@@ -35,7 +35,7 @@
     </table>
     <script>
         $myDropdown = $('#file');
-        $myDropdown.find("li").click(function () {
+        $myDropdown.find("li a").click(function () {
             $caret = ' <span class="caret"></span>';
             $val = $(this).html();
             $(".btn-primary-file.dropdown-toggle").html($val + $caret)
