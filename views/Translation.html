@@ -34,11 +34,18 @@
         </tbody>
     </table>
     <script>
-        $myDropdown = $('#file');
-        $myDropdown.find("li a").click(function () {
+        $myDropdown1 = $('#file');
+        $myDropdown1.find("li a").click(function () {
             $caret = ' <span class="caret"></span>';
             $val = $(this).html();
             $(".btn.btn-primary-file.dropdown-toggle").html($val + $caret)
+        });
+
+        $myDropdown2 = $('#translation');
+        $myDropdown2.find("li a").click(function () {
+            $caret = ' <span class="caret"></span>';
+            $val = $(this).html();
+            $(".btn.btn-primary-translation.dropdown-toggle").html($val + $caret)
         });
     </script>
 </div>
