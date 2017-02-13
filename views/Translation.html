@@ -34,12 +34,11 @@
         </tbody>
     </table>
     <script>
-	    $("#file li a").click(function(){
-		    $(".btn-primary-file:first-child").html($(this).text()+' <span class="caret"></span>');
-    	});
-            
-	    $("#translation a").click(function(){
-		    $(".btn-primary-translation:first-child").html($(this).text()+' <span class="caret"></span>');
-	    });
+        $myDropdown = $('#file');
+        $myDropdown.find("li").click(function () {
+            $caret = ' <span class="caret"></span>';
+            $val = $(this).html();
+            $(".btn-primary-file.dropdown-toggle").html($val + $caret)
+        });
     </script>
 </div>
