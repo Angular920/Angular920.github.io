@@ -31,9 +31,61 @@
             <a class="btn btn-nav" href="/#/Translation">Translation</a>
         </div>
     </nav>
-    <div class="container-fluid">
+    <!--<div class="container-fluid">
         <div ng-view></div>
-    </div>
+    </div>-->
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6">
+    <table class="table table-striped" id="table-translation">
+        <thead>
+            <th class="english-file">
+                <div class="dropdown">
+                    <div class="btn-group">
+                        <button class="btn btn-primary-file dropdown-toggle" type="button" data-toggle="dropdown">File Selection <span class="caret"></span></button>
+                        <div class="dropdown-menu" id="file">
+                            <li><a class="dropdown-item" ng-click="passFileName('File1')">File 1</a></li>
+                            </br>
+                            <li><a class="dropdown-item" ng-click="passFileName('File2')">File 2</a></li>
+                        </div>
+                    </div>
+                </div>
+            </th>
+            <th class="translation">
+                <div class="dropdown">
+                    <div class="btn-group">
+                        <button class="btn btn-primary-translation dropdown-toggle" type="button" data-toggle="dropdown">Language Options <span class="caret"></span></button>
+                        <div class="dropdown-menu" id="translation">
+                            <li><a class="dropdown-item" ng-click="passNewLanguage('German')">German</a></li>
+                            </br>
+                            <li><a class="dropdown-item" ng-click="passNewLangauge('Spanish')">Spanish</a></li>
+                        </div>
+                    </div>
+                </div>
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Hello In English </td>
+                <td><input placeholder="Translation" type="text" class="form-control"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        $myDropdown1 = $('#file');
+        $myDropdown1.find("li a").click(function () {
+            $caret = ' <span class="caret"></span>';
+            $val = $(this).html();
+            $(".btn.btn-primary-file.dropdown-toggle").html($val + $caret)
+        });
+
+        $myDropdown2 = $('#translation');
+        $myDropdown2.find("li a").click(function () {
+            $caret2 = ' <span class="caret"></span>';
+            $val2 = $(this).html();
+            $(".btn.btn-primary-translation.dropdown-toggle").html($val2 + $caret2)
+        });
+    </script>
+</div>
+
 </body>
 
 
