@@ -2,10 +2,10 @@ app.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
         .when('/Home', {
-            templateURL: 'views/Home.html'
+            templateUrl: 'views/Home.html'
         })
         .when('/Translation', {
-            templateURL: 'views/Translation.html'
+            templateUrl: 'views/Translation.html'
         })
         .otherwise({
             redirectTo: '/Home'
