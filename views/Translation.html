@@ -4,11 +4,11 @@
             <th class="english-file">
                 <div class="dropdown">
                     <div class="btn-group">
-                        <button class="btn btn-primary-file dropdown-toggle" type="button" data-toggle="dropdown">File Selection <span class="caret"></span></button>
+                        <button class="btn btn-primary-file dropdown-toggle" type="button" value="File Selection" data-toggle="dropdown">File Selection <span class="caret"></span></button>
                         <div class="dropdown-menu" id="file">
-                            <li><a class="dropdown-item" ng-click="passFileName('File1')">File 1</a></li>
+                            <li><a class="dropdown-item" ng-click="passFileName('File1')" onclick="dropdown(this.innerHTML);">File 1</a></li>
                             </br>
-                            <li><a class="dropdown-item" ng-click="passFileName('File2')">File 2</a></li>
+                            <li><a class="dropdown-item" ng-click="passFileName('File2')" onclick="dropdown(this.innerHTML);">File 2</a></li>
                         </div>
                     </div>
                 </div>
@@ -34,19 +34,9 @@
         </tbody>
     </table>
     <script>
-        $myDropdown1 = $('#file');
-        $myDropdown1.find("li a").click(function () {
-            $caret1 = ' <span class="caret"></span>';
-            $val1 = $(this).html();
-            $(".btn.btn-primary-file.dropdown-toggle").html($val1 + $caret1)
-        });
-
-        $myDropdown2 = $('#translation');
-        $myDropdown2.find("li a").click(function () {
-            $caret2 = ' <span class="caret"></span>';
-            $val2 = $(this).html();
-            $(".btn.btn-primary-translation.dropdown-toggle").html($val2 + $caret2)
-        });
+        function dropdown(val) {
+  		    var y = document.getElementsByClassName('btn btn-primary-file dropdown-toggle');
+  			var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; // Append 
+		}
     </script>
 </div>
-
