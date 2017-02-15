@@ -18,7 +18,7 @@
             <th class="translation">
                 <div class="dropdown">
                     <div class="btn-group">
-                        <button class="btn btn-primary-translation dropdown-toggle" type="button" data-toggle="dropdown" id="langSelection"><span class="langChoice">Language Options: </span><span class="caret"></span></button>
+                        <button class="btn btn-primary-translation dropdown-toggle" value="Language Options" type="button" data-toggle="dropdown" id="langSelection"><span class="langChoice">Language Options: </span><span class="caret"></span></button>
                         <div class="dropdown-menu" id="translation">
                             <li><a class="dropdown-item" ng-click="passNewLanguage('German')">German</a></li>
                             </br>
@@ -44,7 +44,7 @@
 
         $(function() {
             $("#translation li a").click(function() {
-                $("langSelection .langChoice").text('Selected Language: ' + $(this).text() + " ");
+                $("#langSelection .langChoice").text('Selected Language: ' + $(this).text() + " ");
             });
         });
     </script>
