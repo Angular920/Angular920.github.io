@@ -195,3 +195,7 @@ a {
   cursor: pointer;
   touch-action: manipulation
 }
+
+.english {
+  font-size: 12px;
+}
