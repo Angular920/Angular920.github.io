@@ -1,4 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6">
     <table class="table table-striped" id="table-translation">
@@ -6,11 +6,11 @@
             <th class="english-file">
                 <div class="dropdown">
                     <div class="btn-group">
-                        <button class="btn btn-primary-file dropdown-toggle" type="button" value="File Selection" data-toggle="dropdown" id="fileSelection"><span class="fileChoice">   File Selection: </span><span class="caret"></span></button>
+                        <button class="btn btn-primary-file dropdown-toggle" type="button" value="File Selection" data-toggle="dropdown" id="fileSelection"><span class="fileChoice">File Selection: </span><span class="caret"></span></button>
                         <div class="dropdown-menu" id="file">
-                            <li><a class="dropdown-item" ng-click="passFileName('File1')" onclick="dropdown(this.innerText)">File 1</a></li>
+                            <li><a class="dropdown-item" ng-click="passFileName('File1')">File 1</a></li>
                             </br>
-                            <li><a class="dropdown-item" ng-click="passFileName('File2')" onclick="dropdown(this.innerText)">File 2</a></li>
+                            <li><a class="dropdown-item" ng-click="passFileName('File2')">File 2</a></li>
                         </div>
                     </div>
                 </div>
@@ -20,9 +20,9 @@
                     <div class="btn-group">
                         <button class="btn btn-primary-translation dropdown-toggle" type="button" data-toggle="dropdown">Language Options <span class="caret"></span></button>
                         <div class="dropdown-menu" id="translation">
-                            <li><a class="dropdown-item" ng-click="passNewLanguage('German')" onclick="dropdown(this.innerText);">German</a></li>
+                            <li><a class="dropdown-item" ng-click="passNewLanguage('German')">German</a></li>
                             </br>
-                            <li><a class="dropdown-item" ng-click="passNewLangauge('Spanish')" onclick="dropdown(this.innerText);">Spanish</a></li>
+                            <li><a class="dropdown-item" ng-click="passNewLangauge('Spanish')">Spanish</a></li>
                         </div>
                     </div>
                 </div>
