@@ -4,7 +4,7 @@
             <th class="english-file">
                 <div class="dropdown">
                     <div class="btn-group">
-                        <button class="btn btn-primary-file dropdown-toggle" type="button" value="File Selection" data-toggle="dropdown">File Selection <span class="caret"></span></button>
+                        <button class="btn btn-primary-file dropdown-toggle" type="button" value="File Selection" data-toggle="dropdown" id="fileSelection"><span class="fileChoice">   File Selection:</span><span class="caret"></span></button>
                         <div class="dropdown-menu" id="file">
                             <li><a class="dropdown-item" ng-click="passFileName('File1')" onclick="dropdown(this.innerText)">File 1</a></li>
                             </br>
@@ -34,9 +34,10 @@
         </tbody>
     </table>
     <script>
-        function dropdown(val) {
-  		    var y = document.getElementsByClassName('btn btn-primary-file dropdown-toggle');
-  			var aNode = y[0].firstChild.textContent = val + ' <span class="caret"></span>'; // Append 
-		}
+        $(function () {
+            $("#file li a"). click(function () {
+                $("#fileSelection .fileChoice").text('Selected File: ' + $(this).text() + " ");
+            });
+        });
     </script>
 </div>
