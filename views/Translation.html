@@ -5,10 +5,10 @@
                 <div class="dropdown">
                     <div class="btn-group">
                         <button class="btn btn-primary-file dropdown-toggle" type="button" value="File Selection" data-toggle="dropdown">File Selection <span class="caret"></span></button>
-                        <div class="dropdown-menu" id="file">
-                            <li><a class="dropdown-item" ng-click="passFileName('File1')" onclick="dropdown(this.innerHTML)">File 1</a></li>
+                        <div class="dropdown-menu" id="file" id="myDropdown">
+                            <li><a class="dropdown-item" ng-click="passFileName('File1')">File 1</a></li>
                             </br>
-                            <li><a class="dropdown-item" ng-click="passFileName('File2')" onclick="dropdown(this.innerHTML)">File 2</a></li>
+                            <li><a class="dropdown-item" ng-click="passFileName('File2')">File 2</a></li>
                         </div>
                     </div>
                 </div>
@@ -18,9 +18,9 @@
                     <div class="btn-group">
                         <button class="btn btn-primary-translation dropdown-toggle" type="button" data-toggle="dropdown">Language Options <span class="caret"></span></button>
                         <div class="dropdown-menu" id="translation">
-                            <li><a class="dropdown-item" ng-click="passNewLanguage('German')" onclick="dropdown(this.innerHTML);">German</a></li>
+                            <li><a class="dropdown-item" ng-click="passNewLanguage('German')">German</a></li>
                             </br>
-                            <li><a class="dropdown-item" ng-click="passNewLangauge('Spanish')" onclick="dropdown(this.innerHTML);">Spanish</a></li>
+                            <li><a class="dropdown-item" ng-click="passNewLangauge('Spanish')">Spanish</a></li>
                         </div>
                     </div>
                 </div>
@@ -34,9 +34,11 @@
         </tbody>
     </table>
     <script>
-        function dropdown(val) {
-  		    var y = document.getElementsByClassName('btn btn-primary-file dropdown-toggle');
-  			var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; // Append 
-		}
+        $myDropdown = $('#MyDropdown');
+        $myDropdown.find("li a").click(function(){
+            $caret = ' <span class="caret"></span>';
+            $val = $(this).html();
+            $(".btn.btn-primary-file.dropdown-toggle").html($val+$caret)
+        });
     </script>
 </div>
