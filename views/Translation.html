@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6">
+<div class="col-lg-6 col-lg-offset-3 col-md-6 col-sm-6" ng-controller="enResourceController">
     <table class="table table-striped" id="table-translation">
         <thead>
             <th class="english-file">
@@ -30,7 +30,7 @@
         </thead>
         <tbody>
             <tr>
-                <td><p class="english"> Hello in English </p></td>
+                <td><p class="english"> {{ english.TITLE }} </p></td>
                 <td><input placeholder="Translation" type="text" class="form-control"></td>
             </tr>
         </tbody>
